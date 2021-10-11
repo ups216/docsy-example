@@ -92,6 +92,7 @@ time_format_default = "2006.01.02"
 time_format_blog = "2006.01.02"
 
 [markup]
+  defaultMarkdownHandler = 'goldmark'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
@@ -100,6 +101,7 @@ time_format_blog = "2006.01.02"
       style = "tango"
       # Uncomment if you want your chosen highlight style used for code blocks without a specified language
       # guessSyntax = "true"
+prism_syntax_highlighting = true
 
 # Everything below this are Site Params
 
@@ -154,7 +156,7 @@ algolia_docsearch = false
 offlineSearch = false
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
-prism_syntax_highlighting = false
+prism_syntax_highlighting = true
 
 # User interface configuration
 [params.ui]

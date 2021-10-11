@@ -4,6 +4,7 @@ title: "Easy documentation with Docsy"
 linkTitle: "Announcing Docsy"
 description: "The Docsy Hugo theme lets project maintainers and contributors focus on content, not on reinventing a website infrastructure from scratch"
 author: Riona MacNamara ([@rionam](https://twitter.com/bepsays))
+icon: fas fa-tools
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
@@ -19,7 +20,7 @@ The front matter specifies the date of the blog post, its title, a short descrip
 
 Here's an image (`featured-sunset-get.png`) that includes a byline and a caption.
 
-{{< imgproc sunset Fill "600x300" >}}
+{{< imgproc featured-sunset-get.png Fill "600x300" >}}
 Fetch and scale an image in the upcoming Hugo 0.43.
 {{< /imgproc >}}
 
@@ -42,5 +43,29 @@ Fetch and scale an image in the upcoming Hugo 0.43.
 ```
 
 The image will be rendered at the size and byline specified in the front matter.
+
+{{< tabpane >}}
+  {{< tab header="MacOS" lang="shell" >}}
+
+    brew install smartide
+
+  {{< /tab >}}
+  {{< tab header="Windows" lang="javascript">}}
+    let var abc = "sab"
+  {{< /tab >}}
+  {{< tab header="Linux" >}}
+    Karibu sana!
+  {{< /tab >}}
+{{< /tabpane >}}
+
+{{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+// ... code
+{{< / highlight >}}
+
+```go
+func main(){
+  fmt.printLn("hello world")
+}
+```
 
 
